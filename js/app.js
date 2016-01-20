@@ -2,7 +2,7 @@
 var button = document.getElementById('resultButton');
 
 function imagesToDisplay(productName, src){
-  this.pName = productName;
+  this.productName = productName;
   this.src = 'images-to-be-used/' + src;
   this.timesDisplayed = 0;
   this.timesClicked = 0;

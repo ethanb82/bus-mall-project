@@ -1,4 +1,4 @@
-<!--User Stories for client -->
+--- User Stories for client
 
 1) Create a Website that displays 3 random images of products that Bus Mall is interested in selling.
 
@@ -6,7 +6,7 @@
 
 3) Website must be able to count the number of clicks for each individual image of product to determine the popularity of each product but not display the results on the public facing page.
 
-<!--User Stories for developer  -->
+--- User Stories for developer
 
 1) Figure out how to display 3 of 14 images randomly at a time for client
 
@@ -18,7 +18,7 @@
 
 5) Be able to display results of consumer preferences of products after the consumer has clicked on at least 14 images in the form of a bar graph that is hidden to the consumer until the 14th click.
 
-<!--User stories for Consumer -->
+--- User stories for Consumer
 
 1) Website should be visually appealing and easy to interact with.
 
