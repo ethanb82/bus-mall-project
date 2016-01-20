@@ -1,0 +1,44 @@
+header {
+  text-align: center;
+  background-color: #c70000;
+  padding:30px;
+
+}
+
+ .image-container {
+   display: flex;
+   justify-content: space-around;
+   padding: inherit;
+   background-color: #082E85;
+ }
+
+ #imageOne {
+   height:300px;
+   width:300px;
+}
+
+#imageTwo {
+  height:300px;
+  width:300px;
+}
+
+#imageThree {
+  height:300px;
+  width:300px;
+}
+
+footer {
+text-align: center;
+background-color: #c70000;
+padding:30px
+
+}
+
+
+#button {
+  display: flex;
+  justify-content: center;
+}
+#resultButton {
+  display: none;
+}
