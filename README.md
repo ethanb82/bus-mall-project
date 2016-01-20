@@ -13,3 +13,15 @@
 2) Figure how to construct function to count number of clicks to provide product data to Bus Mall.
 
 3) Make visually appealing public facing page to display products to consumers.
+
+4) Make feature that collects data about consumer preferences of products.
+
+5) Be able to display results of consumer preferences of products after the consumer has clicked on at least 14 images in the form of a bar graph that is hidden to the consumer until the 14th click.
+
+<!--User stories for Consumer -->
+
+1) Website should be visually appealing and easy to interact with.
+
+2) Images of products should be displayed clearly and in a uniform order.
+
+3) Images should not repeat in the set of 3 displayed at a time.
