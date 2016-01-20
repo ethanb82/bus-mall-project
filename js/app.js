@@ -7,6 +7,7 @@ function imagesToDisplay(productName, src){
   this.timesDisplayed = 0;
   this.timesClicked = 0;
   this.percentClicked = 0;
+
 }
 
 var totalClicks = 0;
@@ -72,7 +73,6 @@ function eventChangeImage(image) {
   }
 }
 
-
   imageOne.addEventListener ('click', function() {
     console.log(rand1);
     eventChangeImage(imageArray[rand1]);
@@ -88,27 +88,39 @@ function eventChangeImage(image) {
     eventChangeImage(imageArray[rand3]);
     });
 
-//     var data = {
-//     labels: ["January", "February", "March", "April", "May", "June", "July"],
-//     datasets: [
-//         {
-//             label: "My First dataset",
-//             fillColor: "rgba(220,220,220,0.5)",
-//             strokeColor: "rgba(220,220,220,0.8)",
-//             highlightFill: "rgba(220,220,220,0.75)",
-//             highlightStroke: "rgba(220,220,220,1)",
-//             data: [65, 59, 80, 81, 56, 55, 40]
-//         },
-//         {
-//             label: "My Second dataset",
-//             fillColor: "rgba(151,187,205,0.5)",
-//             strokeColor: "rgba(151,187,205,0.8)",
-//             highlightFill: "rgba(151,187,205,0.75)",
-//             highlightStroke: "rgba(151,187,205,1)",
-//             data: [28, 48, 40, 19, 86, 27, 90]
-//         }
-//     ]
-// };
-// var ctx = document.getElementById('whatever is elem html').getContext('2d')
-// var myBarChart = new Chart(ctx).Bar(data, options);
-// }
+    var clicksArrayForChart = [];
+
+    resultButton.addEventListener('click', firstChart);
+
+    function firstChart() {
+      var allClicks = [];
+      var allViewings = [];
+      for (var i = 0; i < imageArray.length; i++) {
+        allViewings[i] = imageArray[i].timesClicked;
+        allClicks[i] = imageArray [i].timesDisplayed;
+      }
+    var data = {
+    labels: ["bag", "banana", "boots", "chair", "cthulhu", "dragon", "pen", "scissors", "shark", "sweep",
+                "unicorn", "usb", "waterCan", "wineGlass"],
+    datasets: [
+        {
+            label: "times clicked",
+            fillColor: "rgba(220,220,220,0.5)",
+            strokeColor: "rgba(220,220,220,0.8)",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
+            data: allClicks
+        },
+        {
+            label: "times displayed",
+            fillColor: "rgba(151,187,205,0.5)",
+            strokeColor: "rgba(151,187,205,0.8)",
+            highlightFill: "rgba(151,187,205,0.75)",
+            highlightStroke: "rgba(151,187,205,1)",
+            data: allViewings
+        }
+    ]
+};
+var context = document.getElementById('preferences').getContext('2d')
+var myBarChart = new Chart(context).Bar(data);
+}

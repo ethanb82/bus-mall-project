@@ -42,3 +42,7 @@ padding:30px
 #resultButton {
   display: none;
 }
+section {
+  display: flex;
+  justify-content: center;
+}
